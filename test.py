@@ -109,10 +109,10 @@ def cost_time(all_data, target_data): # 运行100次求均值时间
 	return total_time / max_times
 	
 if __name__ == '__main__':
-	# create_file()
-	# all_data1, target_data1 = read_list_data('data.txt', 1000000, 1000)
+	create_file()
+	all_data1, target_data1 = read_list_data('data.txt', 1000000, 1000)
 	all_data2, target_data2 = read_dict_data('data.txt', 1000000, 1000) 
-	# cost1 = cost_time(all_data1, target_data1)
+	cost1 = cost_time(all_data1, target_data1)
 	cost2 = cost_time(all_data2, target_data2)
-	# print("list_cost:", cost1)
-	# print("dict_cost:", cost2)
+	print("list_cost:", cost1)
+	print("dict_cost:", cost2)
